@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Room Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .main {
+      display: flex;
+      min-height: 100vh;       
+      flex-wrap: wrap;         
+    }
+
+    .left {
+      flex: 1;                 
+      min-width: 300px;
+      background-image: url('https://i.pinimg.com/736x/15/9a/1e/159a1e1691118a31712dc01315ea8ece.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .right {
+      flex: 1;                 
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;  
+      padding: 40px 0;        
+    }
+
+    form {
+      width: 80%;
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+
+    h1 {
+      text-align: center;
+      color: #0878ef;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .btns {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: 48%;
+      background-color: #0e38f0;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-weight: bold;
+      border-radius: 15px;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: rgb(35, 191, 238);
+    }
+    </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="left"></div>
+
+    <div class="right">
+      <form>
+        <h1>Hotel Room Booking Form</h1>
+
+        <label for="FullName">Full Name :</label>
+        <input type="text" id="FullName" name="FullName" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone :</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="checkin">Check-in Date :</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date :</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="room">Room Type :</label>
+        <select id="room" name="room" required>
+          <option value="">-- Select Room Type --</option>
+          <option value="single">Single Room</option>
+          <option value="double">Double Room</option>
+          <option value="deluxe">Deluxe Room</option>
+          <option value="suite">Suite</option>
+        </select>
+
+        <label for="guests">Number of Guests :</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+        <label for="requests">Special Requests :</label>
+        <textarea id="requests" name="requests" rows="4"></textarea>
+
+        <div class="btns">
+          <input type="submit" value="Book Room">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
