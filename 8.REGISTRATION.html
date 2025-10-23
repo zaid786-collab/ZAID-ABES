@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGESTRATION FORM</title>
+    <style>
+        .bt{
+            background-color: rgb(149, 249, 254);
+            margin-left: 10px;
+            font-size: 25px;
+            height: 10px;
+            width: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid;
+        }
+        .bt:hover{
+            background-color: rgb(8, 140, 241);
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .main{
+            border: 2px solid;
+            padding: 15px;
+            height: 90vh;
+            width: 75%;
+            display: flex;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <h1>STUDENT REGISTRATION FORM</h1>
+
+            <label for="FULL NAME">FULL NAME : </label>
+            <input type="text" id="FullName" name=" FullName" required placeholder="Enter your Full Name ">
+            <br><br>
+            <label for="Email">Email : </label>
+            <input type="email" id="Email" name="Email" placeholder="Enter valid Email address" required>
+            <br><br>
+            <label for="Password">Password : </label>
+            <input type="password" id="Password" name="Password" placeholder="Enter Password" required>
+            <br><br>
+            <label for="Gender">Gender : </label>
+            <input type="radio" id="male" name="Gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+            <br><br>
+            <label for="course">Course : </label>
+            <select id="course" name="course" required>
+                <option value="">--Select Your Course--</option>
+                <option value="Btech">Btech</option>
+                <option value="BCA">BCA</option>
+                <option value="BSC">BSC</option>
+                <option value="BCOM">BCOM</option>
+                <option value="BA">BA</option>
+            </select>
+            <br><br>
+
+            <label for="Contact Number">Contact Number : </label>
+            <input type="number" id="ContactNumber" name="ContactNumber" placeholder="Enter Contact Number" required>
+            <br><br>
+
+            <label for="ADDRESS">ADDRESS : </label >
+            <br>
+            <textarea id="ADDRESS" name="ADDRESS" rows="4" cols="50" placeholder="Enter your Address:" required></textarea>
+            <br><br>
+
+            <btns class="bt">Register</btns>
+            <btns class="bt">Clear</btns>
+        </form>
+    </div>
+    
+</body>
+</html>
