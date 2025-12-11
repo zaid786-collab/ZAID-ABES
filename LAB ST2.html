@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+        p{
+            padding: 10px;
+            margin: 0;
+        }
+        .nav{
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .box, .sy{
+            display: flex;
+            margin-left: 50px;
+            gap: 20px;
+        }
+        .sy{
+            margin-left: auto; 
+        }
+        .c{
+            font-size: 30px;
+            padding: 3px;
+        }
+	@margin only screen and (max-width : 455px){
+		.box{
+			flex-direction : column;
+		}
+	}
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <p><b>ShopEase</b></p>
+
+        <div class="box">
+            <p>Home</p>
+            <p>Products</p>
+            <p>Categories</p>
+            <p>Deals</p>
+            <p>Contact</p>
+        </div>
+
+        <div class="sy">
+            <p><b>Cart</b></p>
+            <p><b>Login</b></p>
+        </div>
+    </div>
+    <p class="c"><b>Welcome to ShopEase</b></p>
+    <p class="c">Shop with us</p>
+    <p style="text-align: center;">MADE BY MOHAMMAD ZAID KHAN</p>
+</body>
+</html>

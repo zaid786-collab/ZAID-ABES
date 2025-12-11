@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: red;
+    }
+    .box{
+        display: flex;
+        
+    }
+    .box1{
+        height: 344px;
+        width: 344px;
+        background-color: white;
+        padding: 8px;
+        margin: 3px;
+        flex-direction: row;
+    }
+    @media only screen and (max-width : 455px){
+        body{
+            background-color: blue;
+        }
+        .box{
+            /* display:flex  ; */
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <h1>Hiii</h1>
+    <div class="box">
+        <div class="box1">
+
+        </div>
+        <div class="box1">
+
+        </div>
+        <div class="box1">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: rgb(231, 224, 223);
+        align-items: center;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        /* flex-direction: row; */
+    }
+    .bx1{
+        display: flex;
+    }
+    .box1{
+        height: 300px;
+        width: 280px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 8px;
+        margin: 3px;
+        box-shadow: 0 4px 6px rgba(0,0,0,1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        box-shadow: 0 4px 6px rgba(0,0,0,1);
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    @media only screen and (max-width : 1024px){
+        .bx1{
+            flex-direction: column;
+        }
+    }
+    @media only screen and (max-width : 600px){
+        .box{
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+    <h1>RESPONSIVE PRODUCT GRID</h1>
+    <div class="box">
+        <div class="bx1">
+            <div class="box1">
+            <img src="APPLE.jpg" style="height: 40%; width: 60%;">
+            <b>PRODUCT 1</b>
+            <p>High quality with great features.</p>
+            <p><b>Rs.499</b></p>
+        </div>
+        <div class="box1">
+            <img src="LENEVO.jpg" style="height: 40%; width: 60%;">
+            <b>PRODUCT 2</b>
+            <p>Durable and stylish for gaming purpose.</p>
+            <p><b>Rs.799</b></p>
+        </div>
+        </div>
+        <div class="bx1">
+            <div class="box1">
+            <img src="HP LAPTOP.jpeg" style="height: 40%; width: 60%;">
+            <b>PRODUCT 3</b>
+            <p>Lightweight and comfotable for coding.</p>
+            <p><b>Rs.1,299</b></p>
+        </div>
+        <div class="box1">
+            <img src="DELL.jpg" style="height: 40%; width: 60%;">
+            <b>PRODUCT 4</b>
+            <p>Trendy design with premium quality.</p>
+            <p><b>Rs.999</b></p>
+        </div>
+        </div>
+    </div>
+    <p style="text-align: center;">EXPERIMENT 9 BY MOHAMMAD ZAID KHAN</p>
+</body>
+</html>
