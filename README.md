@@ -1,7 +1,8 @@
 # Semester 1st Web Development 
 • 1st semester web development codes and projects.
 <br>
-Author-Mohammad Zaid Khan
-(2025B01010175)
+• Author-Mohammad Zaid Khan
 <br>
-CSE 21
+• Roll number - 2503201000718
+<br>
+• Class Assigned - CSE 21
